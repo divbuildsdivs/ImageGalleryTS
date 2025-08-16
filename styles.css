@@ -1,0 +1,40 @@
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.cards {
+    display: none;
+    gap: 20px;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    background-color: #f0f0f0;
+    object-fit: cover;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.active {
+    display: flex;
+}
+
+.category-button {
+    padding: 15px 50px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
