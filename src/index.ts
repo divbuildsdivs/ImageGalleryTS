@@ -1,10 +1,12 @@
-import categoryButtons from "./categoryButtons";
-import natureImageData from "./data";
+import categoryButtons from "./categoryButtons.js";
+import natureImageData from "./data.js";
+import type { NatureImageData } from "./types";
 
-function init() {
+function init(): void {
     console.log("Initializing the application...");
     
-    const categories = Object.keys(natureImageData);
+    const data:NatureImageData = natureImageData;
+    const categories: string[] = Object.keys(data);
     console.log("Available categories:", categories);
     
     categoryButtons(["All", ...categories]);
